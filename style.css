@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    direction: rtl;
+}
+
+header {
+    height: 25px;
+    background-color: rgb(1, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+
+}
+.info svg{
+    color:goldenrod;
+   
+}
+.info span{
+    color:white;
+    padding:0 15px;
+}
+.navbar{
+    height:75px;
+    /* background-color: red; */
+    background-image: linear-gradient(to left,#f36944,#353635,#3d177a);
+    display:flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+
+}
+.main-nav a{
+    padding:0 5px;
+    color:white;
+    font-size:17px;
+    transition: all 0.3s;
+}
+.main-nav a:hover{
+    color:rgb(76, 209, 23)
+}
+/* .test{
+    height:100px;
+    width:100px;
+    background-color: blue;
+    animation:anime1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} */
+.test:hover{
+    /* transform:rotate(150deg); */
+    transition: all 1s;
+    /* transform: scale(2,3); */
+    transform: skew(30deg,40deg);
+}
+@keyframes anime1{
+    0${
+        transform: rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+    }
+    30%{
+        transform:rotate(300deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.search input{
+    height:30px;
+    width: 200px;
+    border-radius: 20px;
+    padding:0 5px;
+}
+input {
+    border:none;
+}
+
+.cards{
+    height: 400px;
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.card{
+    width:25%;
+
+
+}
+.card img{
+    width:100%;
+    height: 200px;
+    ;
+    
+    
+}
+
+@media only screen and (max-width:768px) {
+.main-nav a{
+    font-size:15px;
+    font-weight: bold;
+    padding:0 1.7vw;
+    transition:all 1.5s;
+
+}
+
+}
+@media only screen and (max-width:500px){
+.social img{
+padding: 0 5px;
+width:15px;
+height: 15px;
+
+}
+.info span{
+    padding:0 5px;
+    font-size:12px;
+}
+.info svg{
+    padding:0 5px;
+}
+.search{
+    visibility: hidden;
+    display: none;
+}
+
+}
